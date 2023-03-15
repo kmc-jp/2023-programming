@@ -120,4 +120,67 @@ Python 3.10.8
 [![Image from Gyazo](https://i.gyazo.com/f9b545ac64727ad9a8e68285349e2b68.png)](https://gyazo.com/f9b545ac64727ad9a8e68285349e2b68)
 
 
+## はじめてのプログラミング
+準備が整ったので、詳しいことは置いといてとりあえずプログラミングしてみる。
+何やってるかはそのうち分かるので、なんか動いてる～！ってなれば今回はOK。
+
+### Hello World!
+まずは、定番のHello World!をやってみよう。
+やることは、Hello, World! と表示させるだけ。
+
+- VSCode を起動
+- ツールバーから、File > Open Folder
+- 自由にフォルダーを選択
+  - 例えば、ドキュメントに「2023-programming」という新規フォルダを作成してそれを選択
+- 下の画像の、「フォルダ作成」のところをクリックして、`section1`などのフォルダを作成
+- `section1` フォルダを選択した状態で、「ファイル作成」をクリック
+  → `hello_world.py` という名前のファイルを作成
+
+[![Image from Gyazo](https://i.gyazo.com/bd2191719fa6881a51419be9ba1b13e9.png)](https://gyazo.com/bd2191719fa6881a51419be9ba1b13e9)
+
+- `hello_world.py`に以下のように書き込む
+```python
+print('Hello, World!')
+```
+
+- 右上の実行ボタンをクリック
+[![Image from Gyazo](https://i.gyazo.com/be1575f751db6c2dab3317fbab9e2eb2.png)](https://gyazo.com/be1575f751db6c2dab3317fbab9e2eb2)
+
+- ウィンドウの下の方にパネルが増えて、そこに `Hello, World!` と表示されたら成功！
+プログラミングできましたね！
+```
+Hello, World!
+```
+
+※ もし表示されなかったら教えてね。なにかがうまく動いていないので。
+
+
+### Fizz Buzz
+Fizz Buzz では、
+1から100までの数字を表示するが、3の倍数のときはFizz、5の倍数のときはBuzz、3と5の倍数のときはFizz Buzzと代わりに表示する。
+
+- `section1` フォルダを選択した状態で、「ファイル作成」をクリック
+  → `fizz_buzz.py` という名前のファイルを作成
+
+- `fizz_buzz.py`に以下のように書き込む
+```python
+for i in range(100):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
+```
+
+- 右上の実行ボタンをクリック
+- どう表示されるだろうか？
+
+## 今日のまとめ
+
+- プログラミングが何なのか少しわかった気持ちになった
+- PythonとVSCodeをインストールした
+- VSCodeでコードを書いて実行した
 
