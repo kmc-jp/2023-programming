@@ -12,3 +12,7 @@
 - crashRT
 - 進捗ゼミ(cicada)
 - segre
+
+## 資料
+
+- [第1回：環境構築](section1/section1.md)
