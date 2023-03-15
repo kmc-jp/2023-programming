@@ -99,9 +99,10 @@ Mac の場合
 - 標準でインストールされているので特になにもしなくてOK
 
 確認
-- コマンドプロンプト（Windows）またはターミナル（Mac）を開く
+- Power Shell（Windows）またはターミナル（Mac）を開く
 - `python3 --version` と入力して、バージョンが表示されればOK\
   こんな感じ↓
+  数字は3から始まっていれば問題なし
 ```
 $ python3 --version
 Python 3.10.8
@@ -112,6 +113,9 @@ Python 3.10.8
 - VSCode を起動
 - 左のアイコンからExtensions(4つの四角のアイコン)を選択
 - Python を検索し、インストール
-  - Python のプログラミングを補助してくれるやつが入ります
+  - Python のプログラミングを補助してくれるやつが入る
+
+[![Image from Gyazo](https://i.gyazo.com/f9b545ac64727ad9a8e68285349e2b68.png)](https://gyazo.com/f9b545ac64727ad9a8e68285349e2b68)
+
 
 
