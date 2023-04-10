@@ -4,7 +4,7 @@
 crashRT
 - KMC3回生（45代）
 - 京大情報学科3回生（計算機）
-- 3DCGとか映像製作とかwebアプリとか
+- 3DCGとか映像制作とかwebアプリとか
   - 紅萠祭のビラ作った人
 
 <img src="https://www.kmc.gr.jp/guidance/2023/image/bira-1.jpg" width="480px"> <img src="https://www.kmc.gr.jp/guidance/2023/image/bira-3.jpg" width="480px">
