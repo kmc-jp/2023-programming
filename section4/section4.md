@@ -136,6 +136,7 @@ $ python3 credit2.py
 `elif`は複数書くことができるので，4つ以上に分岐させることもできます．
 
 ### 練習問題
+解答例はGitHubの [section4/sample/ex2](./sample/ex2/) にあります．
 
 1. credit2.py の `score`を変えて，実行結果が変わることを確認してください．
 
