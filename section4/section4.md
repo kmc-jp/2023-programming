@@ -526,7 +526,9 @@ for i in range(7, 10):
     for j in range(1, 10):
         print(i, '*', j, '=', i * j)
 ```
-実行結果
+<details>
+<summary>実行結果</summary>
+
 ```
 7 の段
 7 * 1 = 7
@@ -559,6 +561,7 @@ for i in range(7, 10):
 9 * 8 = 72
 9 * 9 = 81
 ```
+</details>
 
 
 `i`の値が7, 8, 9と変わりながら，各値に対して`j`が1から9の値を取って九九を表示します．
