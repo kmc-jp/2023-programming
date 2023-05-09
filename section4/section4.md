@@ -399,10 +399,74 @@ for i in range(100):
 複数の条件を組み合わせることもできます．
 `and` や `or`，`not`に関しては，第2回を参照してください．
 
+### 練習問題
+解答例はGitHubの [section4/sample/ex/ex4.py](./sample/ex/ex4.py) にあります．
+
+-----
+0から40の値を順番に表示するプログラミングを書いてください．
+ただし，3の倍数，または3のつく数字のときは "hoge" と表示するようにしてください．
+
+ヒント：
+変数`n`が3がつく数字かどうかは `'3' in str(n)` で判定できます．
+
+```python
+n, m = 123, 111
+print('3' in str(n)) # True
+print('3' in str(m)) # False
+```
+
+<details>
+<summary>出力例</summary>
+
+```
+1
+2
+hoge
+4
+5
+hoge
+7
+8
+hoge
+10
+11
+hoge
+hoge
+14
+hoge
+16
+17
+hoge
+19
+20
+hoge
+22
+hoge
+hoge
+25
+26
+hoge
+28
+29
+hoge
+hoge
+hoge
+hoge
+hoge
+hoge
+hoge
+hoge
+hoge
+hoge
+40
+```
+</details>
+
+-----
 
 
 
-## 入れ子・ネストについて
+## 5. 入れ子・ネストについて
 
 if文やwhile文・for文の中にさらにif文やwhile文・for文を入れることができます．
 これをネスト（入れ子）と呼び，if文だと例えばこのようになります．
