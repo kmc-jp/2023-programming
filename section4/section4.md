@@ -188,7 +188,7 @@ c is the biggest
 
 
 ### 練習問題
-解答例はGitHubの [section4/sample/ex/](./sample/ex/ex2.py) 以下にあります．
+解答例はGitHubの [section4/sample/ex/ex2.py](./sample/ex/ex2.py) にあります．
 
 ----
 変数`number`を定義し，その値が偶数か奇数かを判定して出力するプログラムを書いてください．
@@ -299,4 +299,32 @@ input_data = input('入力してください．')
 
 6. ループの先頭に戻り、再びユーザーからの入力を受け付ける処理が繰り返されます。
 
+`break` の他に，`continue` というものもループの中で使えます．
+ループの中で `continue` が実行されると，そのループの先頭に戻ります．
+例えば以下のようにして使うことができます．
 
+```python
+# continue.py
+
+i = 0
+while i < 10:
+    i += 1
+    if i % 3 == 0:
+        continue
+    print(i)
+```
+
+実行結果
+```
+1
+2
+4
+5
+7
+8
+10
+```
+
+`i`が3の倍数の時は `continue`が実行され，ループの先頭に戻るので `print(i)` は実行されません．
+
+それでは，練習問題を解いてみましょう．
