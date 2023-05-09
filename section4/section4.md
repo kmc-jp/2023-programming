@@ -139,7 +139,6 @@ $ python3 credit2.py
 ### 練習問題
 解答例はGitHubの [section4/sample/ex/ex2.py](./sample/ex/ex2.py) にあります．
 
-----
 変数`number`を定義し，その値が偶数か奇数かを判定して出力するプログラムを書いてください．
 
 ```python
@@ -281,7 +280,6 @@ while i < 10:
 ### 練習問題
 解答例はGitHubの [section4/sample/ex/ex3.py](./sample/ex/ex3.py) にあります．
 
-----
 
 10から順番にカウントダウンし，0になったら "あけおめ！" と出力するコードを書いて下さい．
 
@@ -402,7 +400,6 @@ for i in range(100):
 ### 練習問題
 解答例はGitHubの [section4/sample/ex/ex4.py](./sample/ex/ex4.py) にあります．
 
------
 0から40の値を順番に表示するプログラミングを書いてください．
 ただし，3の倍数，または3のつく数字のときは "hoge" と表示するようにしてください．
 
