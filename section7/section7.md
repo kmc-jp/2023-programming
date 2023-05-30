@@ -210,5 +210,123 @@ numpyの他に，matplotlib, sympy, pandas などは便利なので特に理系�
 他にもたくさんあるので，何か作りたいものがある場合は何か良いライブラリが無いか調べてみると良いと思います．
 
 
+## より読みやすいコードを書くためのコツ
+
+最後に，より読みやすいコードを書くためのコツをいくつか紹介します．
+コードを書くときには，自分以外の人が見ても分かりやすいように書くようにしましょう．
+仮に自分しか見ないコードでも，分かりやすくすることは大切です．
+半年後に修正したくなっても何も覚えていないことが多くて，読みにくいコードだと何してるのか分からず修正が難しくなります．
+読みやすいコードを書きましょう！
+
+ここで紹介したものの他にも，読みやすいコードを書くためのコツはたくさんあります．
+興味がある人はオライリーの『リーダブルコード』という本を読んでみてください．
+京大のルネにも置いてあります．
+200ページくらいの読みやすい本で，コードを書くときの参考になると思います．
+
+
+### 分かりやすい名前をつける
+
+変数や関数などに名前をつけるときは，分かりやすい名前をつけるようにしましょう．
+面倒くさいからといって適当に`hoge`とかつけるのは避けた方が良いです．
+例えば三角形の面積を計算する関数なら，`triangle_area`とかつけると良いです．
+
+```python
+def hoge(a, b):
+    tmp = a * b / 2
+    return tmp
+```
+
+よりも
+
+```python
+def rectangle_area(width, height):
+    area = width * height / 2
+    return area
+```
+の方が後で見たときに分かりやすいと思います．
+
+似たような処理をするものがある時は，名前の違いで区別すると良いです．
+名前だけで説明しきれない場合は，コメントを書きましょう．
+
+```python
+def calc_area(width, height):
+    area = width * height
+    return area
+
+def calc_area2(width, height):
+    area = width * height / 2
+    return area
+```
+よりは
+
+```python
+def calc_area_rectangle(width, height):
+    area = width * height
+    return area
+
+def calc_area_triangle(width, height):
+    area = width * height / 2
+    return area
+```
+
+のほうが，二つの関数の違いが名前だけで分かるので良いです．
+今は関数の中身が簡単なので良いですが，これが複雑な処理になってくると地獄です．
+名前をつけるときは，分かりやすい名前をつけるようにしましょう．
+
+
+### docstring
+関数には，関数の説明を書くことができます．
+関数の説明は，関数の定義の直下`"""`で囲んだ部分に書きます．
+関数が何を行うのか，引数は何か，戻り値は何か，などを書いておくと良いでしょう．
+
+```python
+def triangle_area(width, height):
+    """
+    三角形の面積を計算する
+    
+    引数
+    width:float 底辺の長さ
+    height:float 高さ
+
+    戻り値
+    area:float 三角形の面積
+    """
+    area = width * height / 2
+    return area
+```
+
+VSCodeとかで関数を使おうとしたときにdocstringの内容を表示してくれるので便利です．
+どんどん活用していきましょう．
+
+### 型ヒント
+
+Pythonは動的型付け言語なので，変数の型は勝手に変わって行きます．
+しかし，コードを書いていく上で想定している型などはあると思います．
+それらをヒントとして書いておくと，後で見て分かりやすいし，VSCodeなどがヒントを表示してくれたりするので便利です．
+
+```python
+def triangle_area(width:float, height:float) -> float:
+    """
+    三角形の面積を計算する
+    
+    引数
+    width:float 底辺の長さ
+    height:float 高さ
+
+    戻り値
+    area:float 三角形の面積
+    """
+    area = width * height / 2
+    return area
+
+w: float = 10.0
+h: float = 16.0
+
+area: float = triangle_area(w, h)
+
+```
+
+変数・引数は名前の後ろに `:`` をつけて，
+関数の戻り値は，関数名の後ろに `->` をつけて型を書きます．
 
 
