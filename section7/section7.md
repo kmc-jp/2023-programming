@@ -240,7 +240,7 @@ def hoge(a, b):
 よりも
 
 ```python
-def rectangle_area(width, height):
+def triangle_area(width, height):
     area = width * height / 2
     return area
 ```
@@ -327,7 +327,7 @@ area: float = triangle_area(w, h)
 
 ```
 
-変数・引数は名前の後ろに `:`` をつけて，
+変数・引数は名前の後ろに `:` をつけて，
 関数の戻り値は，関数名の後ろに `->` をつけて型を書きます．
 
 ## まとめ
