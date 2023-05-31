@@ -23,9 +23,9 @@
   - リスト，タプル，辞書
 - 5/10 [第4回：制御構文](section4/section4.md)
   - if文，for文，while文
-- 5/17 第5回：関数
-- 5/24 第6回：クラス
-- 5/31 第7回：モジュール
+- 5/17 [第5回：関数](section5/section5.md)
+- 5/24 [第6回：クラス](section6/section6.md)
+- 5/31 [第7回：モジュール](section7/section7.md)
 - 6/7 第8回：Git
 - 6/14 第9回：SSH
 
